@@ -27,7 +27,6 @@ public class ReviewRepositoryImpl implements ReviewRepository{
 	}
 	
 	@Override
-	//ReviewServiceImpl의 getList()에서 사용됨
 	public List<Review> selectAll() {
 		List<Review> tmp = new ArrayList<>();
 		for(int key : reviews.keySet()) {

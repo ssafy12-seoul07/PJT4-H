@@ -5,28 +5,28 @@
 <head>
 <meta charset="UTF-8">
 
-<!-- 메인화면 -> 동영상 재생 화면 -> 리뷰 목록 -> 리뷰 작성 & 관리 -->
-<title>리뷰 등록</title>
+<title>리뷰 수정</title>
 </head>
 <body>
-	<h1>reviewWrite.jsp</h1>
-	<!-- 근데 리뷰작성 & 수정을 모달태그를 써서 했었는데 그건 어떻게 해야 하지 이거랑 html파일이랑 별개인가?? -->
-	<form action="review" method="post">	<!-- 이 태그를 통해 서블릿에 작성된 내용 전송 -->
+	<h3>리뷰 수정</h3>
+	<form action="review" method="post">	<!-- 서블릿에 작성된 내용 전송 -->
 	
 	<input type="hidden" name="action" value="update">
-	<input type="hidden" name="id" value="${board.id }">
+	<input type="hidden" name="id" value="${review.id }">
 	
 		<div>
-			글 제목 : <input type="text" name="title">
+			글 제목 : <input type="text" name="title" value="${review.title }">
 		</div>
-		<div><!-- PJT-2에는 작성자를 쓰는 태그를 만들지 않았음 혹시모르니까 넣어놨음 필요없으면 나중에 없애자 -->
-			작성자 : <input type="text" name="writer" placeholder="글쓴이">
+		<div>
+			작성자 : <input type="text" name="writer" value="${review.writer }">
 		</div>		
 		<div>
-			내용 : <textarea rows="10" cols="30" name="content"></textarea>
+			내용 : <textarea rows="10" cols="40" name="content">${review.content}</textarea>
 		</div>		
 		<div>
-			<input type="submit" value="게시글 등록">
+			<input type="submit" value="게시글 수정">
+			<a href="${pageContext.request.contextPath}/review?action=list">게시글 목록으로 돌아가기</a>
+			
 		</div>
 	
 	</form>

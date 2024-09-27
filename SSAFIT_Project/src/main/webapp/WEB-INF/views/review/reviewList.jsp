@@ -1,19 +1,32 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+<%@ taglib prefix="c" uri="jakarta.tags.core" %>
+    
 <!DOCTYPE html>
 <html>
 <head>
 <meta charset="UTF-8">
-<title>리뷰 목록 보이기</title>
-<!-- 만들었던 페이지 중 동영상 재생과 리뷰 보기를 함께 할 수 있는 그 페이지의 jsp -->
+<title>리뷰 목록</title>
 </head>
 <body>
-	<h1>reviewList.jsp</h1>
+	<h3>리뷰 목록</h3>
+	<table>
+		<tr>
+			<th>번호</th>
+			<th>제목</th>
+			<th>작성자</th>
+			<th>조회수</th>
+			<th>등록일</th>
+		</tr>
+		<c:forEach items="${list }" var="review">
+			<tr>
+				<td>${review.id}</td>															<!-- 번호 -->	
+				<td><a href="review?action=detail&id=${review.id}">${review.title}</a></td>		<!-- 제목 -->	
+				<td>${review.writer}</td>														<!-- 작성자 -->
+				<td>${review.viewCnt}</td>														<!-- 조회수 -->
+				<td>${review.regDate}</td>														<!-- 등록일 -->			
+			</tr>
+		</c:forEach>
 	
-	<a href="review?action=writeform">리뷰 등록</a>
-	
-	<!-- 리뷰 관리 페이지로 들어가면 리뷰 목록 확인과 수정까지 가능케 한다 -->
-	<a href="review?action=update">리뷰 관리</a>
-	
+	</table>
 </body>
 </html>

@@ -15,7 +15,8 @@ import java.util.List;
 
 @WebServlet("/main")
 public class MainController extends HttpServlet {
-    private VideoService videoService;
+	private static final long serialVersionUID = 1L;
+	private VideoService videoService;
 
     @Override
     public void init() throws ServletException {
