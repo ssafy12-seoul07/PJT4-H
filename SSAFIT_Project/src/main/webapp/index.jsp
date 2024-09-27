@@ -1,15 +1,13 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8"%>
+<%@ page language="java" contentType="text/html; charset=EUC-KR"
+    pageEncoding="EUC-KR"%>
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="UTF-8">
-<title>ל„ל‹ ל¸כ±ל₪</title>
+<meta charset="EUC-KR">
+<title>ְ׃½ֳpage</title>
 </head>
 <body>
-<h1>index.jsp</h1>
-	<a href="review?action=view">כ¦¬כ·° כ³´כ¬ך°€ך¸°</a>
-
-
+	<a href="user?action=loginForm">·־±׳ְ־ ֳ¢ְ¸·־ ְּµ¿</a>
+	<a href="user?action=signupForm">ָ¸¿ר°¡ְװ ֳ¢ְ¸·־ ְּµ¿</a>
 </body>
 </html>
