@@ -34,7 +34,8 @@ SSAFIT_Project/
 │   │   │   ├── video
 │   │   │   │   ├── videoList.jsp         // 영상 목록 화면
 │   │   │   ├── review
-│   │   │   │   ├── reviewList.jsp        // 영상 재생 + 리뷰 목록 화면
+│   │   │   │   ├── reviewList.jsp        // 리뷰 목록 화면
+│   │   │   │   ├── detail.jsp            // 리뷰 상세 화면
 │   │   │   │   ├── reviewWrite.jsp       // 리뷰 작성 화면
 │   │   │   │   ├── reviewUpdate.jsp      // 리뷰 관리 화면
 │   │   │   ├── user
