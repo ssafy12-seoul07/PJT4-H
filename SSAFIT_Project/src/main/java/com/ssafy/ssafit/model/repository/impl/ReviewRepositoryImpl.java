@@ -1,4 +1,4 @@
-package com.ssafy.ssafit.model.repository;
+package com.ssafy.ssafit.model.repository.impl;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -6,6 +6,7 @@ import java.util.List;
 import java.util.Map;
 
 import com.ssafy.ssafit.model.dto.Review;
+import com.ssafy.ssafit.model.repository.ReviewRepository;
 
 // 패키지 이동해야 함!!!
 public class ReviewRepositoryImpl implements ReviewRepository{

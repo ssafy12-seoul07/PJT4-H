@@ -1,10 +1,10 @@
-package com.ssafy.ssafit.service.impl;
+package com.ssafy.ssafit.model.service.impl;
 
 import java.util.List;
 
 import com.ssafy.ssafit.model.dto.Review;
 import com.ssafy.ssafit.model.repository.ReviewRepository;
-import com.ssafy.ssafit.model.repository.ReviewRepositoryImpl;
+import com.ssafy.ssafit.model.repository.impl.ReviewRepositoryImpl;
 import com.ssafy.ssafit.model.service.ReviewService;
 
 public class ReviewServiceImpl implements ReviewService{

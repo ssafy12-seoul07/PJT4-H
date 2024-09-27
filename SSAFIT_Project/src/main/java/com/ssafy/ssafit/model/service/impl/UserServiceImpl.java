@@ -1,21 +1,19 @@
-package com.ssafy.ssafit.model.service;
+package com.ssafy.ssafit.model.service.impl;
 
 import com.ssafy.ssafit.model.dto.User;
 import com.ssafy.ssafit.model.repository.UserRepository;
-import com.ssafy.ssafit.model.repository.UserRepositoryImpl;
+import com.ssafy.ssafit.model.repository.impl.UserRepositoryImpl;
+import com.ssafy.ssafit.model.service.UserService;
 
 public class UserServiceImpl implements UserService {
 	
 	private UserRepository repo = UserRepositoryImpl.getInstance(); // Singleton 인스턴스 가져오기
     
-    private static UserService service;
-
-    private UserServiceImpl() {}
+	private UserServiceImpl() {}
+	
+    private static UserService service = new UserServiceImpl();
 
     public static UserService getInstance() {
-        if (service == null) {
-            service = new UserServiceImpl();
-        }
         return service;
     }
 
@@ -34,6 +32,13 @@ public class UserServiceImpl implements UserService {
             return false;  // 이미 존재하는 사용자
         }
         repo.saveUser(user);
+        // 저장 직후 다시 한번 확인
+//        if (repo.findByUserId(user.getUserId()) != null) {
+//            System.out.println("User saved successfully!");
+//        } else {
+//            System.out.println("Failed to find user after saving.");
+//        }
+
         return true;
     }
 

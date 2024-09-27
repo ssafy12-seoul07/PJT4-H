@@ -4,7 +4,7 @@ import java.io.IOException;
 
 import com.ssafy.ssafit.model.dto.Review;
 import com.ssafy.ssafit.model.service.ReviewService;
-import com.ssafy.ssafit.service.impl.ReviewServiceImpl;
+import com.ssafy.ssafit.model.service.impl.ReviewServiceImpl;
 
 import jakarta.servlet.ServletException;
 import jakarta.servlet.annotation.WebServlet;

@@ -1,6 +1,11 @@
 package com.ssafy.ssafit.model.dto;
 
-public class User {
+import java.io.Serializable;
+
+public class User implements Serializable{
+	
+	private static final long serialVersionUID = 10002L;
+	private static int no = 1;
 	int userSeq;
 	String userId;
 	String password;
@@ -9,8 +14,8 @@ public class User {
 	
 	public User() {}
 	
-	public User(int userSeq, String userId, String password, String userName, String nickName) {
-		this.userSeq = userSeq;
+	public User(String userId, String password, String userName, String nickName) {
+		this.userSeq = no++;
 		this.userId = userId;
 		this.password = password;
 		this.userName = userName;

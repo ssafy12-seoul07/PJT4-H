@@ -12,6 +12,7 @@
     <nav>
         <ul>
             <li><a href="${pageContext.request.contextPath}/main">메인 페이지</a></li>
+            <li><a href="${pageContext.request.contextPath}/user?action=loginForm">로그인 페이지</a></li>
             <!-- 다른 기능이 추가될 경우 여기에 링크 추가 -->
         </ul>
     </nav>
