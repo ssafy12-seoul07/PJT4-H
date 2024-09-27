@@ -47,5 +47,5 @@ SSAFIT_Project/
 │           └── script.js                 // 자바스크립트 파일
 │
 │
-└── pom.xml                                // Maven 설정 파일
+└── index.jsp                                // Maven 설정 파일
 ```
