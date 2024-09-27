@@ -12,12 +12,15 @@ SSAFIT_BackEnd 프로젝트에 기여한 내용 요약 및 배운 점을 기록�
 - 로그인 시 **userId**와 **password**를 사용하여 메모리에서 관리 중인 사용자 정보와 비교하여 인증이 이루어집니다.
 - 메모리의 사용자 목록은 **UserServiceImpl.java**의 `login` 메서드에서 사용됩니다. 여기서는 사용자 아이디와 비밀번호가 일치하는지 확인한 후 결과를 반환합니다.
 - 로그인 성공 시 "loginSuccess" 페이지로 리다이렉트되며, 실패할 경우 오류 메시지가 출력됩니다.
-  
+  ![Seoul07_BackEnd_PJT-H_로그인01](./img/ssafit_login1.png)
+  ![Seoul07_BackEnd_PJT-H_로그인02](./img/ssafit_login1fail.png)
 #### 2) 회원가입 기능
 - **UserController.java**의 `doSignRegist` 메서드를 통해 회원가입 기능이 구현되었습니다.
 - 회원가입 시 **userId**, **password**, **userName**, **nickName**과 같은 정보를 입력받아 메모리에 새로운 사용자로 저장됩니다.
 - 메모리에 저장된 사용자 정보는 **UserServiceImpl.java**의 `signup` 메서드를 통해 처리되며, 회원가입 시 중복된 **userId**가 있는지 확인 후 중복이 없을 경우 새로운 사용자를 메모리에 추가합니다.
 - 회원가입 성공 시 로그인 페이지로 리다이렉트되며, 중복된 **userId**가 있으면 오류 메시지가 출력됩니다.
+  ![Seoul07_BackEnd_PJT-H_회원가입01](./img/ssafit_join1.png)
+  ![Seoul07_BackEnd_PJT-H_회원가입02](./img/ssafit_joinsuccess.png)
 
 ### 주요 파일
 
