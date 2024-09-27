@@ -26,6 +26,8 @@
 				<td>${review.regDate}</td>														<!-- 등록일 -->			
 			</tr>
 		</c:forEach>
+		
+		<a href="review?action=writeform">리뷰 등록</a>
 	
 	</table>
 </body>

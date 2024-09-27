@@ -19,6 +19,9 @@ public class ReviewRepositoryImpl implements ReviewRepository{
 	//생성자, 기본값 1개 미리 생성
 	private ReviewRepositoryImpl() {
 		reviews.put(1, new Review("제목1", "작성자1", "내용1"));
+		reviews.put(2, new Review("제목2", "작성자2", "내용2"));
+		reviews.put(3, new Review("제목3", "작성자3", "내용3"));
+		reviews.put(4, new Review("제목4", "작성자4", "내용4"));
 	}
 	
 	//싱글턴 객체

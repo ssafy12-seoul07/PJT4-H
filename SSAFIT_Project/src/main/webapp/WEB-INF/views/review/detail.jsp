@@ -5,6 +5,7 @@
 <head>
 <meta charset="UTF-8">
 <title>리뷰 상세</title>
+
 </head>
 <body>
 	<h3>리뷰 상세</h3>
